@@ -44,7 +44,7 @@ def start(message):
     markup.add(btn2)
     bot.send_message(message.chat.id,
                      text="<--- Привет!Покажи мне буквы правой рукой на жестовом языке"
-                          " (напиши пример жестов чтобы просмотреть возможные варианты)--->".format(
+                          " (напиши \"пример жестов\" чтобы просмотреть возможные варианты)--->".format(
                          message.from_user), reply_markup=markup)
 
 
