@@ -59,7 +59,7 @@ def photo_prediction(message):
                                          " \ntelegramm:@kotoylitka "
                                          "\n  https://sugato0.github.io/SignLanguage_numbersIteration_Page/ ")
     if message.text == "Пример жестов":
-        bot.send_photo(message.chat.id, photo=("https://drive.google.com/file/d/1W4pQxvJ2cqIy3StZRi1lZfiWD_FRb6KC/view?usp=sharing"))
+        bot.send_photo(message.chat.id, photo=("https://sugato0.github.io/SilentLanguage_AlphabetIteration_page/"))
 @bot.message_handler(content_types=["photo"])
 def photo_prediction(message):
 
