@@ -43,7 +43,8 @@ def start(message):
     markup.add(btn1)
     markup.add(btn2)
     bot.send_message(message.chat.id,
-                     text="<--- Привет!Покажи мне следующие буквы правой рукой --->".format(
+                     text="<--- Привет!Покажи мне буквы правой рукой на жестовом языке"
+                          " (напиши пример жестов чтобы просмотреть возможные варианты)--->".format(
                          message.from_user), reply_markup=markup)
 
 
@@ -58,7 +59,7 @@ def photo_prediction(message):
                                          " \ntelegramm:@kotoylitka "
                                          "\n  https://sugato0.github.io/SignLanguage_numbersIteration_Page/ ")
     if message.text == "Пример жестов":
-        bot.send_photo(message.chat.id, photo=("https://sayga12.ru/wp-content/uploads/2014/09/83ba5bb2615aec63c7c6277e0f48c139.jpg"))
+        bot.send_photo(message.chat.id, photo=("https://drive.google.com/file/d/1W4pQxvJ2cqIy3StZRi1lZfiWD_FRb6KC/view?usp=sharing"))
 @bot.message_handler(content_types=["photo"])
 def photo_prediction(message):
 
