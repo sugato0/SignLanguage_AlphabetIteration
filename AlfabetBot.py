@@ -50,14 +50,7 @@ def start(message):
 
 @bot.message_handler(content_types=["text"])
 def photo_prediction(message):
-    if message.text == "Наша команда":
-        bot.send_message(message.chat.id,"Сахаров Данила Сергеевич "
-                                         "\n telegramm:@SugatoKavary "
-                                         "\n Попова Александра Алексеевна "
-                                         "\n telegramm:@zvukii_paniki\n"
-                                         " Марьяна Молчанова-Великая Алексеевна"
-                                         " \ntelegramm:@kotoylitka "
-                                         "\n  https://sugato0.github.io/SignLanguage_numbersIteration_Page/ ")
+    
     if message.text == "Пример жестов":
         bot.send_photo(message.chat.id, photo=("https://sugato0.github.io/SilentLanguage_AlphabetIteration_page/"))
 @bot.message_handler(content_types=["photo"])
